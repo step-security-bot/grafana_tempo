@@ -34,3 +34,48 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+
+  - package-ecosystem: docker
+    directory: /cmd/tempo-cli
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /cmd/tempo-query
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /cmd/tempo-vulture
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /cmd/tempo
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /tools
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /tools
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /vendor/github.com/go-redis/redis/v8
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /vendor/github.com/pelletier/go-toml/v2
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /vendor/go.opentelemetry.io/otel
+    schedule:
+      interval: daily
